@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials & Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Travel<span>Go</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Destinations.html">Destinations</a></li>
+                <li><a href="Exclusive Tour Packages.html">Exclusive Tour Packages</a></li>
+                <li><a href="About_us.html">About Us</a></li>
+                <li><a href="Testimonials & Reviews.html">Testimonials & Reviews</a></li>
+                <li><a href="Contact_us.html">Contact</a></li>
+                <li><a href="Login/login.html">Login or Sign up</a></li>
+                <li><a href="#" class="book-btn">Book Now</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our <span>Customers Say</span></h2>
+        
+        <!-- Customer Reviews Carousel -->
+        <div class="carousel">
+            <div class="testimonial active">
+                <img src="images/user1.jpg" alt="User 1">
+                <p>"Amazing experience! The tour was well organized, and the guide was very knowledgeable."</p>
+                <h4>- Emily Johnson</h4>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="testimonial">
+                <img src="images/user2.jpg" alt="User 2">
+                <p>"Best vacation ever! Great service and easy booking. Highly recommended!"</p>
+                <h4>- Mark Thompson</h4>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="testimonial">
+                <img src="images/user3.jpg" alt="User 3">
+                <p>"Loved every bit of my trip! Fantastic customer support and smooth experience."</p>
+                <h4>- Sarah Lee</h4>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+
+        <!-- Carousel Navigation -->
+        <button class="prev" onclick="prevTestimonial()">❮</button>
+        <button class="next" onclick="nextTestimonial()">❯</button>
+    </section>
+
+    <!-- Video Testimonial Section -->
+    <section class="video-testimonial">
+        <h2>Watch Our Happy Travelers</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <section class="feedback">
+        <h2>Send Your <span>Feedback</span></h2>
+        <form id="feedback-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Feedback" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+            <p id="feedback-status"></p>
+        </form>
+    </section>
+
+</body>
+</html>

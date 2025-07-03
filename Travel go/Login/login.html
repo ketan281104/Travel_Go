@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <script type="module" src="login.js"></script>
+    
+</head>
+<body>
+    <div class="login-container">
+        <h2>Log in</h2>
+        <div class="toggle-container">
+            <span>USER</span>
+            <label class="switch">
+                <input type="checkbox" id="roleToggle">
+                <span class="slider"></span>
+            </label>
+            <span>OWNER</span>
+        </div>
+        <form class="login-form">
+            <input type="email" id="email" placeholder="Email" required>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Password" required>
+                <span class="toggle-password">👁️</span>
+            </div>
+            <a href="forgot-password.html" class="forgot-password">Forgot password?</a>
+            <button type="submit" class="login-btn">Log in</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+
+</body>
+</html>
