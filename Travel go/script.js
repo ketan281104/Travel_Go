@@ -1,3 +1,4 @@
+require('dotenv').config();
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {
   getFirestore,
@@ -7,12 +8,12 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAU7bpPFgnSEtRfcQ_Aq75_5zGkB-uaHX4",
-  authDomain: "travelgo-9439b.firebaseapp.com",
-  projectId: "travelgo-9439b",
-  storageBucket: "travelgo-9439b.appspot.com",
-  messagingSenderId: "72325616660",
-  appId: "1:72325616660:web:a3448e709856e622a04301"
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId:process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSEGIND_SENDER_ID,
+  appId: process.env.APP_ID
 };
 
 
