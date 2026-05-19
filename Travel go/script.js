@@ -6,17 +6,16 @@ import {
   getDocs
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// ✅ Firebase config (corrected storageBucket)
 const firebaseConfig = {
   apiKey: "AIzaSyAU7bpPFgnSEtRfcQ_Aq75_5zGkB-uaHX4",
   authDomain: "travelgo-9439b.firebaseapp.com",
   projectId: "travelgo-9439b",
-  storageBucket: "travelgo-9439b.appspot.com",  // ✅ fixed
+  storageBucket: "travelgo-9439b.appspot.com",
   messagingSenderId: "72325616660",
   appId: "1:72325616660:web:a3448e709856e622a04301"
 };
 
-// ✅ Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
